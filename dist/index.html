@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- link to css -->
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <!-- link to js -->
+    <script src="./js/script.js" defer></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <div class="title">Simple, traffic-based pricing</div>
+        <div class="subtitle">
+          Sign-up for our 30-day trial. No credit card required.
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-1">
+          <div class="viewText"><span class="views">100K</span> PAGEVIEWS</div>
+          <div class="slider-btn">
+            <input
+              type="range"
+              name="slider"
+              id="myslider"
+              class="slider"
+              min="-4"
+              max="36"
+              value="16"
+              step="4"
+            />
+          </div>
+          <div class="priceText"><span class="price">$16.00</span>/month</div>
+        </div>
+        <div class="container-2">
+          <div class="text-1">Monthly Billing</div>
+          <label class="switch">
+            <input type="checkbox" class="check" />
+            <span class="slider round"></span>
+          </label>
+          <div class="text-2">Yearly Billing</div>
+          <div class="discount">
+            <div class="neg">-</div>
+            <div class="num">25%</div>
+            <div class="word">discount</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container-3">
+          <ul class="features">
+            <li><span class="icon"></span>Unlimited websites</li>
+            <li><span class="icon"></span>100% data ownership</li>
+            <li><span class="icon"></span>Email reports</li>
+          </ul>
+          <button class="cta-btn">Start my Trial</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ShubhamPitale" target="_blank"
+        >Shubham Pitale</a
+      >.
+    </div>
+  </body>
+</html>
